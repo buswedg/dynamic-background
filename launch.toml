@@ -1,0 +1,11 @@
+[project]
+name = "Dynamic Background"
+package = "dynamic_background"
+venv = ".venv"
+default = "cli"
+elevate = false
+
+[commands]
+cli = { cmd = ["python", "-m", "dynamic_background.cli"], description = "Command-line interface" }
+schedule = { cmd = ["python", "-m", "dynamic_background.cli", "schedule"], description = "Scan backgrounds and rebuild the theme registry" }
+extract = { cmd = ["python", "-m", "dynamic_background.cli", "extract"], description = "Extract wallpapers from HEIC or DDW packages" }

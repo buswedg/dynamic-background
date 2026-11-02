@@ -1,0 +1,14 @@
+[scheduler]
+# Directory containing extracted wallpapers for background scheduling.
+# Can be absolute, or relative to the project root directory.
+backgrounds_dir = "images/example"
+
+[extractor]
+# Target aspect ratio for cropping (set to null to disable cropping)
+target_aspect = 1.7777777777777777
+
+# Target resolution to force images to [width, height] (set to null to keep original)
+force_resolution = [3840, 2160]
+
+# JPEG compression quality (1-100) or null to disable re-compression
+jpeg_quality = 90
